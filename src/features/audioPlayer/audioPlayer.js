@@ -72,6 +72,8 @@ export function AudioPlayer(track_id) {
         }
     }
 
+    // I'm the play pause feature
+
     // const pureFindCurrentTrackStatus = (arrayOfTracks, trackID, globalPlayingState) => {
     //     // dispatch(setPlaying(trackID))
     //     for (let i = 0; i < arrayOfTracks.length; i++) {

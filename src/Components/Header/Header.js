@@ -18,7 +18,7 @@ const Header = () => {
               <li><Link to="/buy">Buy</Link></li>
               <li><Link to="/faq">FAQ</Link></li>
               <li><Link to="/contact">Contact</Link></li>
-              <li><Link to="/cart"><img src={icon}/></Link></li>
+              <li><Link to="/cart"><div className='numberOfCartItemsHeader'><img src={icon}/><p>10</p></div></Link></li>
             </ul>
         </div>
         <div className="header-mobile-icon">

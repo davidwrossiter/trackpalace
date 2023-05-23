@@ -6,7 +6,7 @@ const HomePage = () => {
     return(
         <div>
             <h1 id="hero" >Grab a lease for your next big hit!</h1>
-            <h1></h1>
+            <h2>Trending</h2>
             <div className='home-page-audio'>
                 <AudioPlayer id='1'></AudioPlayer>
                 <AudioPlayer id='2'></AudioPlayer>
@@ -16,7 +16,7 @@ const HomePage = () => {
 
                 
             </div>
-            <h2></h2>
+            <h2>Best Sellers</h2>
             <div className='home-page-audio'>
                 <AudioPlayer id='1'></AudioPlayer>
                 <AudioPlayer id='2'></AudioPlayer>

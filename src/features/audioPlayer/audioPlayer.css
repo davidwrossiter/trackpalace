@@ -24,16 +24,94 @@
     flex-direction: column;
 }
 
-.track button {
+.button-container {
+    display: flex;
+    flex-direction: row;
+}
+
+#play {
+    font-size: 12px;
     color: white;
     height: 30px;
+    width: 130px;
     background-color: #0C0C0C;
     border: solid rgb(214, 214, 214) 2px;
     border-radius: 6px;
+    margin-right: 5px;
 }
 
-#hello {
-    
+#play:hover{
+    background-color:#2f2f2f
+}
+
+#play:active {
+    background-color: #3f3f3f;
+}
+
+#cart {
+    color: white;
+    height: 30px;
+    width: 130px;
+    font-size: 12px;
+    font-weight: 700;
+    background-color: #1B65FF;
+    border: none;
+    border-radius: 6px;
+    margin-left: 5px;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+}
+
+#cart:hover {
+    background-color: #3575ff;
+}
+#cart:active {
+    background-color: #4e86ff;
+}
+
+#cart img {
+    width: 14px;
+    margin-right: 5px;
+}
+
+#track-name {
+    margin-top: 10px;
+    margin-bottom: 10px;
+    font-weight: 600;
+}
+
+.button-container {
     width: 270px;
     
+}
+
+.track-description {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    
+}
+
+
+
+#track-bpm {
+    font-size: 12px;
+    font-weight: 600;
+    color: #8B8B8B;
+    margin-bottom: 2px;
+}
+
+.track-artist {
+    display: flex;
+    margin-bottom: 20px;
+}
+
+.track-artist p {
+    font-size: 12px;
+    margin-right: 5px;
+    margin-bottom: 1px;
+    font-weight: 600;
+    color: #8B8B8B;
 }

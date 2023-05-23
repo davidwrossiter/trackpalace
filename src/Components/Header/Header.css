@@ -93,3 +93,14 @@ header {
       display: none;
       }
     }
+
+  .numberOfCartItemsHeader {
+    display: flex;
+    flex-direction: row;
+    margin-bottom: 4px;
+  }
+
+  .numberOfCartItemsHeader p {
+    font-weight: 600;
+    font-size: 12px;
+  }

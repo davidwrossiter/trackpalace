@@ -9,6 +9,7 @@ import {
 import './audioPlayer.css';
 import { selectTracksToPlay } from "../tracksToPlay/tracksToPlaySlice";
 import { setPlaying, setPlayingFalse, setPlayingTrue } from "../tracksToPlay/tracksToPlaySlice";
+import cartIcon from '../../Icons/ShoppingCartFilled.svg';
 
 export function AudioPlayer(track_id) {
     const dispatch = useDispatch();
@@ -97,9 +98,9 @@ export function AudioPlayer(track_id) {
 
                         </div>                         
                     </div>
-                    <div track-description>
-                        <p>{currentTrack.track_name}</p>
-                        <p>{currentTrack.track_bpm}</p>
+                    <div className='track-description'>
+                        <p id="track-name">{currentTrack.track_name}</p>
+                        <p id="track-bpm">{currentTrack.track_bpm}</p>
                         <div className='track-artist'>
                             <p>{currentTrack.track_artist}</p>
                             <img src='https://drive.google.com/uc?export=view&id=1mBnRA0aWy5kjRwPJ_qhN2BUIMdu064sE'></img>
@@ -109,13 +110,19 @@ export function AudioPlayer(track_id) {
                         id={track_id.id}
                         src={currentTrack.track_src}             
                     />
-                    <button onClick={() => {
-                        togglePlay(track_id.id)
-                        trackStatus(audioRef, track_id.id, audioStatus)
-                        
-                        // pureFindCurrentTrackStatus(trackList, track_id.id-1, audioStatus)
-                        
-                        }}>{findCurrentTrackStatus(currentTrack.track_is_playing)}</button>
+                    <div class='button-container'>
+                        <button id='play' onClick={() => {
+                            togglePlay(track_id.id)
+                            trackStatus(audioRef, track_id.id, audioStatus)
+                            
+                            // pureFindCurrentTrackStatus(trackList, track_id.id-1, audioStatus)
+                            
+                            }}>{findCurrentTrackStatus(currentTrack.track_is_playing)}</button>
+                        <button id='cart'>
+                            <img src={cartIcon}/>
+                            $35.00
+                        </button>
+                    </div>
                 </div>
             </div>
         </div>

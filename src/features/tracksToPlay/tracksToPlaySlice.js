@@ -10,6 +10,13 @@ const initialState = {
             track_bpm: '168 BPM',
             track_artist: 'Davi Beats',
             track_is_playing: false,
+            track_price: {
+                mp3_lease: 29.99,
+                wav_lease: 49.99,
+                premium_lease: 99.99,
+                unlimited_lease: 199.99,
+                exclusive_lease: 'Negotiate Price',
+            },
         },
         {
             track_id: '2',
@@ -19,6 +26,13 @@ const initialState = {
             track_bpm: '149 BPM',
             track_artist: 'Davi Beats',
             track_is_playing: false,
+            track_price: {
+                mp3_lease: 29.99,
+                wav_lease: 49.99,
+                premium_lease: 99.99,
+                unlimited_lease: 199.99,
+                exclusive_lease: 'Negotiate Price',
+            },
         },
         {
             track_id: '3',
@@ -28,6 +42,13 @@ const initialState = {
             track_bpm: '168 BPM',
             track_artist: 'Davi Beats',
             track_is_playing: false,
+            track_price: {
+                mp3_lease: 29.99,
+                wav_lease: 49.99,
+                premium_lease: 99.99,
+                unlimited_lease: 199.99,
+                exclusive_lease: 'Negotiate Price',
+            },
         },
         {
             track_id: '4',
@@ -37,6 +58,13 @@ const initialState = {
             track_bpm: '168 BPM',
             track_artist: 'Davi Beats',
             track_is_playing: false,
+            track_price: {
+                mp3_lease: 29.99,
+                wav_lease: 49.99,
+                premium_lease: 99.99,
+                unlimited_lease: 199.99,
+                exclusive_lease: 'Negotiate Price',
+            },
         },
         {
             track_id: '5',
@@ -46,6 +74,13 @@ const initialState = {
             track_bpm: '149 BPM',
             track_artist: 'Davi Beats',
             track_is_playing: false,
+            track_price: {
+                mp3_lease: 29.99,
+                wav_lease: 49.99,
+                premium_lease: 99.99,
+                unlimited_lease: 199.99,
+                exclusive_lease: 'Negotiate Price',
+            },
         },
       
     ],

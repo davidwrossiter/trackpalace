@@ -13,13 +13,34 @@ header {
     display: flex;
     justify-content: center;
     align-items: center;
+    flex-direction: column;
     height: 80px;
     width: 90rem;
+    width: 100%;
+    position: fixed;
+    top: 0;
+    
     /* border: solid red 10px; */
     /* padding-right: 20%;
     padding-left: 20%; */
   }
+  .header {
+    display: flex;
+    position: fixed;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+  }
+
+#header-line {
+  width: 100%;
+  position: fixed;
+  top: 80px;
+  height: 1px;
+  background-color: rgb(204, 204, 204);
   
+}
+
   nav ul {
     display: flex;
     list-style: none;
@@ -67,7 +88,7 @@ header {
   .the-best {
     font-family: 'Raleway', sans-serif;
     font-weight: 800;
-    font-style: italic;
+    /* font-style: italic; */
     text-decoration: none;
     color: #fff;
     font-size: 24px;

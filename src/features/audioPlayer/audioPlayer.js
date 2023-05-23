@@ -10,12 +10,15 @@ import './audioPlayer.css';
 import { selectTracksToPlay } from "../tracksToPlay/tracksToPlaySlice";
 import { setPlaying, setPlayingFalse, setPlayingTrue } from "../tracksToPlay/tracksToPlaySlice";
 import cartIcon from '../../Icons/ShoppingCartFilled.svg';
+import { addToCart } from "../cartItems/cartItemsSlice";
+import { selectNumberItemsInCart } from "../cartItems/cartItemsSlice";
 
 export function AudioPlayer(track_id) {
     const dispatch = useDispatch();
     const audioRef = useSelector(selectAudioStatus)
     const audioStatus = useSelector(selectAudioPlaying)
     const trackList = useSelector(selectTracksToPlay)
+    const itemsInCart = useSelector(selectNumberItemsInCart)
 
     const togglePlay = (newElementToPlay) => {
         if (audioRef === '0') {
@@ -73,19 +76,46 @@ export function AudioPlayer(track_id) {
         }
     }
 
-    // I'm the play pause feature
+    const generateCartItem = (currentTrack) => {
+        return {
 
-    // const pureFindCurrentTrackStatus = (arrayOfTracks, trackID, globalPlayingState) => {
-    //     // dispatch(setPlaying(trackID))
-    //     for (let i = 0; i < arrayOfTracks.length; i++) {
-    //         if (arrayOfTracks[i].track_is_playing === true && arrayOfTracks[i].track_id !== trackID) {
-    //             dispatch(setPlaying(i))
-            
-    //         } else if (arrayOfTracks[i].track_is_playing === true && arrayOfTracks[i].track_id === trackID) {
-    //             dispatch(setPlaying(i))
-    //         }
-    //     }
-    // }
+            cart_item_number: itemsInCart+1,
+    
+            cart_item: {
+                track_id: currentTrack.track_id,
+                track_name: currentTrack.track_name,
+                track_src: currentTrack.track_src,
+                track_img_src: currentTrack.track_img_src,
+                track_bpm: currentTrack.track_bpm,
+                track_artist: currentTrack.track_artist,
+                track_price: 35.00,
+                lease_type: 'Basic'
+            },
+        }
+    }
+
+
+
+
+
+
+    const item_to_add = {
+
+        cart_item_number: 3,
+
+        cart_item: {
+            track_id: '3',
+            track_name: '7 Sins',
+            track_src: 'https://docs.google.com/uc?export=download&id=11dpRdwSz4vcgfnjeVXGdH5YH9EK_n_Y5',
+            track_img_src: 'https://drive.google.com/uc?export=view&id=1b4811KWd98cjKjwuZqHvzsHwuMrC0plj',
+            track_bpm: '149 BPM',
+            track_artist: 'Davi Beats',
+            track_price: 199.99,
+            lease_type: 'Unlimited'
+        },
+    }
+
+
 
     return (
         <div>
@@ -118,7 +148,7 @@ export function AudioPlayer(track_id) {
                             // pureFindCurrentTrackStatus(trackList, track_id.id-1, audioStatus)
                             
                             }}>{findCurrentTrackStatus(currentTrack.track_is_playing)}</button>
-                        <button id='cart'>
+                        <button id='cart' onClick={() => dispatch(addToCart(generateCartItem(currentTrack)))}>
                             <img src={cartIcon}/>
                             $35.00
                         </button>

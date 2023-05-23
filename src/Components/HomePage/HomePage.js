@@ -12,7 +12,8 @@ const HomePage = () => {
                 <AudioPlayer id='2'></AudioPlayer>
                 <AudioPlayer id='3'></AudioPlayer>
                 <AudioPlayer id='4'></AudioPlayer>
-                
+                <AudioPlayer id='5'></AudioPlayer>
+
                 
             </div>
             <h2></h2>
@@ -21,6 +22,7 @@ const HomePage = () => {
                 <AudioPlayer id='2'></AudioPlayer>
                 <AudioPlayer id='3'></AudioPlayer>
                 <AudioPlayer id='4'></AudioPlayer>
+                <AudioPlayer id='5'></AudioPlayer>
                 
                 
             </div>

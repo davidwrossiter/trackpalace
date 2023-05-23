@@ -38,6 +38,15 @@ const initialState = {
             track_artist: 'Davi Beats',
             track_is_playing: false,
         },
+        {
+            track_id: '5',
+            track_name: '7 Sins',
+            track_src: 'https://docs.google.com/uc?export=download&id=11dpRdwSz4vcgfnjeVXGdH5YH9EK_n_Y5',
+            track_img_src: 'https://drive.google.com/uc?export=view&id=1b4811KWd98cjKjwuZqHvzsHwuMrC0plj',
+            track_bpm: '149 BPM',
+            track_artist: 'Davi Beats',
+            track_is_playing: false,
+        },
       
     ],
 
@@ -59,10 +68,10 @@ export const tracksToPlaySlice = createSlice({
             state.trackList[action.payload].track_is_playing = !state.trackList[action.payload].track_is_playing;
         },
         setPlayingFalse: (state, action) => {
-            state.trackList[action.payload].track_is_playing = false;
+            state.trackList[action.payload-1].track_is_playing = false;
         },
         setPlayingTrue: (state, action) => {
-            state.trackList[action.payload].track_is_playing = true;
+            state.trackList[action.payload-1].track_is_playing = true;
         }
         
     }

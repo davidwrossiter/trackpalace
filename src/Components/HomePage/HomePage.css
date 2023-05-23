@@ -1,0 +1,25 @@
+.home-page-audio {
+    background-color: #0C0C0C;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    width: 1440px;
+    margin-bottom: 100px;
+
+}
+
+#hero {
+    font-size: 4rem;
+    color: white;
+    width: 1440px;
+    font-weight: 800;
+    margin-top: 200px;
+    margin-bottom: 200px;
+}
+
+h2 {
+    color: white;
+    display: flex;
+    padding-bottom: 20px;
+    font-size: 2rem;
+}

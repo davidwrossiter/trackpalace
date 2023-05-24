@@ -1,0 +1,162 @@
+.Cart {
+    background-color: #232323;
+    border: solid red 1px;
+}
+
+.cart-page-container {
+    margin-top: 130px;
+    color: white;
+    width: 1440px;
+    
+
+}
+
+.cart-page-container h1 {
+    font-size: 64px;
+    margin-bottom: 50px;
+}
+
+.cart-line {
+    background-color: white;
+    width: 1440px;
+    height: 1px;
+    opacity: 0.5;
+    background-color: rgb(204, 204, 204);
+    margin-bottom: 50px;
+}
+
+.cart-item-info img {
+    width: 55px;
+    border-radius: 6px;
+}
+
+.cart-item-info {
+    display: flex;
+    align-items: center;
+    width: 200px;
+}
+.cart-item-artist-info {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    margin-left: 10px;
+}
+
+
+
+.cart-item-artist-name {
+    font-size: 12px;
+    font-weight: 600;
+    color: #8B8B8B;
+    display: flex;
+    align-items: center;
+}
+
+.cart-item-artist-name img {
+    width: 12px;
+    margin-top: 2px;
+    margin-left: 5px;
+}
+
+#cart-item-track-name {
+    font-size: 18px;
+    margin-bottom: 5px;
+    font-weight: 600;
+    color: #E4E4E4;
+}
+
+.cart-item-cart-page {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+    margin-bottom: 40px;
+}
+
+.cart-item-info-header {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 50px;
+    font-size: 12px;
+    font-weight: 400;
+    color: #A7A7A7;
+
+}
+
+#cart-item-item-header {
+    width: 190px;
+    display: flex;
+    /* margin-right: 10px; */
+
+}
+
+.cart-item-price, .cart-item-license {
+    font-size: 16px;
+    font-weight: 600;
+}
+
+#remove-from-cart-button {
+    width: 150px;
+}
+
+#place-holder-for-cart-titles {
+    width: 220px;
+    opacity: 0;
+}
+
+#place-holder-for-cart-titles-price {
+    margin-right: 30px;
+    margin-left: 10px;
+}
+
+#remove-from-cart-button {
+    background: none;
+    border: none;
+    width: 32px;
+
+}
+
+.cart-item-review-remove-from-cart {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+    width: 220px;
+}
+
+#review-license-button {
+    width: 170px;
+    height: 42px;
+    color: white;
+    border: none;
+    background-color: #232323;
+    border-radius: 6px;
+}
+
+/* CART SUMMARY */
+
+.cart-summary {
+    border: solid white 1px;
+    opacity: 0.5;
+    border-radius: 6px;
+    display: flex;
+    justify-content: center;
+
+}
+
+.cart-line-2 {
+    background-color: white;
+    width: 1000px;
+    height: 1px;
+    opacity: 0.5;
+    background-color: rgb(204, 204, 204);
+    margin-bottom: 50px;
+    
+}
+
+.cart-summary-container {
+    width: 1000px;
+}
+

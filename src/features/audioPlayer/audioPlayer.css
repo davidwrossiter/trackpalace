@@ -8,6 +8,7 @@
 #cover-art {
     width: 270px;
     /* height: 300px; */
+    border-radius: 6px;
 }
 
 #play-icon {
@@ -74,6 +75,7 @@
 #cart img {
     width: 14px;
     margin-right: 5px;
+    
 }
 
 #track-name {

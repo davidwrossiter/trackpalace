@@ -94,29 +94,6 @@ export function AudioPlayer(track_id) {
         }
     }
 
-
-
-
-
-
-    const item_to_add = {
-
-        cart_item_number: 3,
-
-        cart_item: {
-            track_id: '3',
-            track_name: '7 Sins',
-            track_src: 'https://docs.google.com/uc?export=download&id=11dpRdwSz4vcgfnjeVXGdH5YH9EK_n_Y5',
-            track_img_src: 'https://drive.google.com/uc?export=view&id=1b4811KWd98cjKjwuZqHvzsHwuMrC0plj',
-            track_bpm: '149 BPM',
-            track_artist: 'Davi Beats',
-            track_price: 199.99,
-            lease_type: 'Unlimited'
-        },
-    }
-
-
-
     return (
         <div>
 

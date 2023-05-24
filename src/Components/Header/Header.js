@@ -9,7 +9,11 @@ import { useSelector } from 'react-redux';
 const Header = () => {
 
   const cartTotal = useSelector(selectNumberItemsInCart)
-
+  const updateHeader = (cartTotal) => {
+    if (cartTotal > 0) {
+      return <p id='header-cart-total'>{cartTotal}</p>
+    }
+  }
   return (
     <div className="header">
       <header>
@@ -24,7 +28,7 @@ const Header = () => {
                 <li><Link to="/buy">Buy</Link></li>
                 <li><Link to="/faq">FAQ</Link></li>
                 <li><Link to="/contact">Contact</Link></li>
-                <li><Link to="/cart"><div className='numberOfCartItemsHeader'><img src={icon}/><p>{cartTotal}</p></div></Link></li>
+                <li><Link to="/cart"><div className='numberOfCartItemsHeader'><img src={icon}/>{updateHeader(cartTotal)}</div></Link></li>
               </ul>
           </div>
           <div className="header-mobile-icon">

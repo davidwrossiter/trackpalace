@@ -34,6 +34,8 @@ export const cartItemsSlice = createSlice({
         },
         removeFromCart: (state, action) => {
             state.listCartItems = state.listCartItems.filter(item => item.cart_item_number !== action.payload)
+            state.cartTotal = calcCartTotal(state)
+            state.numberItemsInCart = calcTotalCartItem(state)
         }
         
     }

@@ -26,12 +26,12 @@ const Cart = () => {
                 <div>{cartItemInfo.map((item) => {
                     return <div className='cart-item-cart-page'>
                             <div className='cart-item-info'>
-                                <img src={item.cart_item.track_img_src}></img>
+                                <img src={item.cart_item.track_img_src} alt='cart-item-image'></img>
                                 <div className='cart-item-artist-info'>
                                     <p id='cart-item-track-name'>{item.cart_item.track_name}</p>
                                     <div className='cart-item-artist-name'>
                                         <p>{item.cart_item.track_artist}</p>
-                                        <img src='https://drive.google.com/uc?export=view&id=1mBnRA0aWy5kjRwPJ_qhN2BUIMdu064sE'></img>
+                                        <img src='https://drive.google.com/uc?export=view&id=1mBnRA0aWy5kjRwPJ_qhN2BUIMdu064sE' alt='verified-badge'></img>
                                     </div>
                                     
                                 </div>
@@ -71,11 +71,11 @@ const Cart = () => {
                     </div>
                     <div id='checkout-options-buttons'>
                         <button id='checkout-with-pay-pal'>
-                            <img src={paypalLogo} />
+                            <img src={paypalLogo} alt='paypal-logo' />
                             <p>Checkout via PayPal</p>
                         </button>
                         <button id='checkout-with-stripe'>
-                            <img src={stripeLogo} />
+                            <img src={stripeLogo} alt='stripe-logo' />
                             <p>Checkout via Stripe</p>
                         </button>
                     </div>

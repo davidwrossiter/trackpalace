@@ -8,7 +8,6 @@ import {
 } from './audioPlayerSlice';
 import './audioPlayer.css';
 import { selectTracksToPlay } from "../tracksToPlay/tracksToPlaySlice";
-import { setPlaying, setPlayingFalse, setPlayingTrue } from "../tracksToPlay/tracksToPlaySlice";
 import cartIcon from '../../Icons/ShoppingCartFilled.svg';
 import { addToCart } from "../cartItems/cartItemsSlice";
 import { selectNumberItemsInCart } from "../cartItems/cartItemsSlice";
@@ -101,7 +100,7 @@ export function AudioPlayer(track_id) {
                 <div className="track-container">
                     <div>
                         <div>
-                            <img src={currentTrack.track_img_src} id='cover-art' />
+                            <img src={currentTrack.track_img_src} id='cover-art' alt='track-art' />
 
                         </div>                         
                     </div>
@@ -110,7 +109,7 @@ export function AudioPlayer(track_id) {
                         <p id="track-bpm">{currentTrack.track_bpm}</p>
                         <div className='track-artist'>
                             <p>{currentTrack.track_artist}</p>
-                            <img src='https://drive.google.com/uc?export=view&id=1mBnRA0aWy5kjRwPJ_qhN2BUIMdu064sE'></img>
+                            <img src='https://drive.google.com/uc?export=view&id=1mBnRA0aWy5kjRwPJ_qhN2BUIMdu064sE' alt='verification-badge'></img>
                         </div>
                     </div>
                     <audio 
@@ -126,7 +125,7 @@ export function AudioPlayer(track_id) {
                             
                             }}>{findCurrentTrackStatus(currentTrack.track_is_playing)}</button>
                         <button id='cart' onClick={() => dispatch(addToCart(generateCartItem(currentTrack)))}>
-                            <img src={cartIcon}/>
+                            <img src={cartIcon} alt='cart-icon'/>
                             $35.00
                         </button>
                     </div>

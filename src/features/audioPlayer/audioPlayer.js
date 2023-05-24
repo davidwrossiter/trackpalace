@@ -7,7 +7,7 @@ import {
     selectAudioStatus,
 } from './audioPlayerSlice';
 import './audioPlayer.css';
-import { selectTracksToPlay } from "../tracksToPlay/tracksToPlaySlice";
+import { selectTracksToPlay, setPlayingFalse, setPlayingTrue } from "../tracksToPlay/tracksToPlaySlice";
 import cartIcon from '../../Icons/ShoppingCartFilled.svg';
 import { addToCart } from "../cartItems/cartItemsSlice";
 import { selectNumberItemsInCart } from "../cartItems/cartItemsSlice";
@@ -100,7 +100,7 @@ export function AudioPlayer(track_id) {
                 <div className="track-container">
                     <div>
                         <div>
-                            <img src={currentTrack.track_img_src} id='cover-art' alt='track-art' />
+                            <img src={currentTrack.track_img_src} id='cover-art' alt='cover-art' />
 
                         </div>                         
                     </div>

@@ -69,18 +69,19 @@ const Cart = () => {
                             <p>${cartTotal}.00</p>
                         </div>
                     </div>
+                    <div id='checkout-options-buttons'>
+                        <button id='checkout-with-pay-pal'>
+                            <img src={paypalLogo} />
+                            <p>Checkout via PayPal</p>
+                        </button>
+                        <button id='checkout-with-stripe'>
+                            <img src={stripeLogo} />
+                            <p>Checkout via Stripe</p>
+                        </button>
+                    </div>
                 </div>
             </div>
-            <div>
-                <button id='checkout-with-pay-pal'>
-                    <img src={paypalLogo} />
-                    <p>Checkout via PayPal</p>
-                </button>
-                <button id='checkout-with-stripe'>
-                    <img src={stripeLogo} />
-                    <p>Checkout via Stripe</p>
-                </button>
-            </div>
+            
         </div>
     )
 }

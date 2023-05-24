@@ -28,7 +28,7 @@ const Header = () => {
                 <li><Link to="/buy">Buy</Link></li>
                 <li><Link to="/faq">FAQ</Link></li>
                 <li><Link to="/contact">Contact</Link></li>
-                <li><Link to="/cart"><div className='numberOfCartItemsHeader'><img src={icon}/>{updateHeader(cartTotal)}</div></Link></li>
+                <li><Link to="/cart"><div className='numberOfCartItemsHeader'><img src={icon} alt='cart'/>{updateHeader(cartTotal)}</div></Link></li>
               </ul>
           </div>
           <div className="header-mobile-icon">

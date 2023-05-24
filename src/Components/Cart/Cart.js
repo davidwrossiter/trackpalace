@@ -8,7 +8,7 @@ import stripeLogo from '../../Icons/StripeLogo.svg';
 import paypalLogo from '../../Icons/PayPalLogo.svg';
 
 const Cart = () => {
-    const cartTotalItems = useSelector(selectNumberItemsInCart);
+    // const cartTotalItems = useSelector(selectNumberItemsInCart);
     const cartTotal = useSelector(selectCartTotal);
     const cartItemInfo = useSelector(selectCartItems);
     const dispatch = useDispatch()
@@ -26,7 +26,7 @@ const Cart = () => {
                 <div>{cartItemInfo.map((item) => {
                     return <div className='cart-item-cart-page'>
                             <div className='cart-item-info'>
-                                <img src={item.cart_item.track_img_src} alt='cart-item-image'></img>
+                                <img src={item.cart_item.track_img_src} alt='cart-item'></img>
                                 <div className='cart-item-artist-info'>
                                     <p id='cart-item-track-name'>{item.cart_item.track_name}</p>
                                     <div className='cart-item-artist-name'>
@@ -44,7 +44,7 @@ const Cart = () => {
                             </div>
                                 <div className='cart-item-review-remove-from-cart'>
                                     <button id='review-license-button'>Review License</button>
-                                    <button id='remove-from-cart-button' onClick={() => {dispatch(removeFromCart(item.cart_item_number))}}><img src={removeIcon} /></button>
+                                    <button id='remove-from-cart-button' onClick={() => {dispatch(removeFromCart(item.cart_item_number))}}><img src={removeIcon} alt='remove-from-cart'/></button>
                                 </div>
                         </div>
                 })}</div>

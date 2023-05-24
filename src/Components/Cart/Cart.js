@@ -1,6 +1,6 @@
 import React from "react";
 import './Cart.css'
-import { selectCartTotal, selectNumberItemsInCart, selectCartItems } from "../../features/cartItems/cartItemsSlice";
+import { selectCartTotal, selectCartItems } from "../../features/cartItems/cartItemsSlice";
 import { useSelector, useDispatch } from "react-redux";
 import { removeFromCart } from "../../features/cartItems/cartItemsSlice";
 import removeIcon from '../../Icons/Plus.svg';
